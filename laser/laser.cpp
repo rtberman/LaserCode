@@ -17,6 +17,7 @@
 // $Id: RF22.h,v 1.21 2012/05/30 01:51:25 mikem Exp $
 #include <bcm2835.h>
 #include <stdio.h>
+#include <stdint.h>
 #include <math.h>
 #include <string>
 #include <vector>
