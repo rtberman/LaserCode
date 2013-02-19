@@ -3,7 +3,7 @@
 #              dependencies are the object files that build the program
 
 laser: RaspberryPi.o laser.o
-	g++ -o laser RaspberryPi.o laser.o -l bcm2835
+	g++ -o laser -l rt RaspberryPi.o laser.o -l bcm2835
 
 # now define how each object file is a target and list dependencies and how
 #  to build that object file if any dependencies change

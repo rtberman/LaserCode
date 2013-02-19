@@ -143,7 +143,7 @@ int main(int argc, char *argv[])
 	if (!pi.InitializePi())
 		return -1;
 
-	vector<vector<COORDINATE>> coordinates;
+	vector<vector<COORDINATE> > coordinates;
 	const string filenamePrefix="out";
 	uint16_t i=0;
 	while (1)
@@ -160,7 +160,7 @@ int main(int argc, char *argv[])
 	const uint32_t cycles=1;
 	while (1)
 	{   
-		for (vector<vector<COORDINATE>>::const_iterator p=coordinates.begin();p!=coordinates.end();++p)
+		for (vector<vector<COORDINATE> >::const_iterator p=coordinates.begin();p!=coordinates.end();++p)
 			ShowImage(*p, cycles);
 	}
 
