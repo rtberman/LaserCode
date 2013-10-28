@@ -11,3 +11,9 @@
 *.lai
 *.la
 *.a
+[Dd]ebug*/
+[Rr]elease*/
+*.sdf
+*.vcxproj*
+*.opensdf
+*.suo

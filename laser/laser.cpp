@@ -157,11 +157,14 @@ int main(int argc, char *argv[])
 		coordinates.push_back(temp);
 	}
 
-	const uint32_t cycles=1;
-	while (1)
-	{   
-		for (vector<vector<COORDINATE> >::const_iterator p=coordinates.begin();p!=coordinates.end();++p)
-			ShowImage(*p, cycles);
+	if (!coordinates.empty())
+	{
+		const uint32_t cycles=1;
+		while (1)
+		{   
+			for (vector<vector<COORDINATE> >::const_iterator p=coordinates.begin();p!=coordinates.end();++p)
+				ShowImage(*p, cycles);
+		}
 	}
 
 	/*
